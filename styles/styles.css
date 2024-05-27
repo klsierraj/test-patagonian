@@ -1,6 +1,23 @@
-.container {
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Familjen Grotesk", sans-serif;
+}
+.main-container {
     padding: 48px 72px 72px 72px;
-    max-width: 1440px;
     margin: auto;
     box-sizing: border-box;
+}
+
+.card {
+    border: 0px;
+}
+img.card-img {
+    width: 247px;
+    height: 142px;
+}
+.card-body {
+    padding: 0;
 }

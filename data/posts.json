@@ -1,0 +1,34 @@
+[
+    {
+        "image": "../assets/images/img-post-one.png",
+        "tag": "Manufacturing | Sub sector",
+        "title": "Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit",
+        "date": "2024-05-26",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id gravida lacus. Nullam tristique sed urna a scelerisque. Donec varius turpis sed ante congue, eu auctor felis hendrerit. Fusce ullamcorper nunc id nunc blandit, et mollis eros consequat. Quisque vel elit sed leo blandit dapibus.",
+        "author": "John Doe"
+    },
+    {
+        "image": "https://example.com/image2.jpg",
+        "tag": "health",
+        "title": "Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit",
+        "date": "2024-05-25",
+        "excerpt": "Living a healthier lifestyle doesn't have to be difficult. Here are 10 simple tips to help you improve your overall well-being.",
+        "author": "Jane Smith"
+    },
+    {
+        "image": "https://example.com/image3.jpg",
+        "tag": "travel",
+        "title": "Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit",
+        "date": "2024-05-24",
+        "excerpt": "Looking for your next travel adventure? Check out these top 5 destinations that should be on your list for 2024.",
+        "author": "Emily Johnson"
+    },
+    {
+        "image": "https://example.com/image4.jpg",
+        "tag": "finance",
+        "title": "Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit",
+        "date": "2024-05-23",
+        "excerpt": "Saving money can be challenging, especially when you're on a tight budget. Here are some strategies to help you save more effectively.",
+        "author": "Michael Brown"
+    }
+]
