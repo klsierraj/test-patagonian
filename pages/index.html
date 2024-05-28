@@ -18,64 +18,60 @@
 
         <div class="row primary-row">
             <div class="col first-post" id="first-post">
+                <div class="card">
+                    <img src="../assets/images/img-post-one.png" class="card-img-top" alt="${post.title}">
+                    <div class="card-body">
+                        <p class="text-muted tag">Manufacturing | Sub sector</p>
+                        <h2 class="card-title">Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit</h2>
+                        <p class="text-muted date-text">2024 xxxx </p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id gravida lacus. Nullam tristique sed urna a scelerisque. Donec varius turpis sed ante congue, eu auctor felis hendrerit. Fusce ullamcorper nunc id nunc blandit, et mollis eros consequat. Quisque vel elit sed leo blandit dapibus.</p>
+                        <div class="author-container">
+                            <div><img src="../assets/images/circle.png"></div>
+                            <div><p>Author name</p>
+                            <p class="text-muted">Title</p></div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col" id="other-posts">
+                <div class="card card-other-posts">
+                    <div class="row row-other-posts">
+                        <div class="col content-col">
+                            <h2 class="card-title">Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit</h5>
+                                <p class="text-muted date-text">2024 xxxx</p>
+                        </div>
+                        <div class="col img-col">
+                            <img src="../assets/images/img-post-second.png" class="card-img" alt="Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit">
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-other-posts">
+                    <div class="row row-other-posts">
+                        <div class="col content-col">
+                            <h2 class="card-title">Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit</h5>
+                                <p class="text-muted date-text">2024 xxx</p>
+                        </div>
+                        <div class="col img-col">
+                            <img src="../assets/images/img-third-post.png" class="card-img" alt="Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit">
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-other-posts">
+                    <div class="row row-other-posts">
+                        <div class="col content-col">
+                            <h2 class="card-title">Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit</h5>
+                                <p class="text-muted date-text">2024</p>
+                        </div>
+                        <div class="col img-col">
+                            <img src="../assets/images/img-post-fourth.png" class="card-img" alt="Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit"">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch('../data/posts.json')
-                .then(response => response.json())
-                .then(posts => {
-                    function createFirstPostHTML(post) {
-                        return `
-                            <div class="card">
-                                <img src="${post.image}" class="card-img-top" alt="${post.title}">
-                                <div class="card-body">
-                                    <p class="text-muted tag">${post.tag}</p>
-                                    <h2 class="card-title">${post.title}</h2>
-                                    <p class="text-muted date-text">${post.date}</p>
-                                    <p class="card-text">${post.excerpt}</p>
-                                    <div class="author-container">
-                                        <div><img src="../assets/images/circle.png"></div>
-                                        <div><p>${post.author}</p>
-                                        <p class="text-muted">Title</p></div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    }
-
-                    function createOtherPostHTML(post) {
-                        return `
-                            <div class="card card-other-posts">
-                                <div class="row row-other-posts">
-                                    <div class="col content-col">
-                                        <h2 class="card-title">${post.title}</h5>
-                                        <p class="text-muted date-text">${post.date}</p>
-                                    </div>
-                                    <div class="col img-col">
-                                        <img src="${post.image}" class="card-img" alt="${post.title}">
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    }
-
-                    const firstPostContainer = document.getElementById('first-post');
-                    firstPostContainer.innerHTML = createFirstPostHTML(posts[0]);
-
-                    const otherPostsContainer = document.getElementById('other-posts');
-                    for (let i = 1; i < posts.length; i++) {
-                        otherPostsContainer.innerHTML += createOtherPostHTML(posts[i]);
-                    }
-                })
-                .catch(error => console.error('Error loading posts, try again:', error));
-        });
-    </script>
 </body>
 
 </html>
