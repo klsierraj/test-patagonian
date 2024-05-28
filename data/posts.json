@@ -8,27 +8,27 @@
         "author": "John Doe"
     },
     {
-        "image": "https://example.com/image2.jpg",
-        "tag": "health",
+        "image": "../assets/images/img-post-second.png",
+        "tag": "",
         "title": "Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit",
         "date": "2024-05-25",
-        "excerpt": "Living a healthier lifestyle doesn't have to be difficult. Here are 10 simple tips to help you improve your overall well-being.",
-        "author": "Jane Smith"
+        "excerpt": "",
+        "author": ""
     },
     {
-        "image": "https://example.com/image3.jpg",
-        "tag": "travel",
+        "image": "../assets/images/img-third-post.png",
+        "tag": "",
         "title": "Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit",
         "date": "2024-05-24",
-        "excerpt": "Looking for your next travel adventure? Check out these top 5 destinations that should be on your list for 2024.",
-        "author": "Emily Johnson"
+        "excerpt": "",
+        "author": ""
     },
     {
-        "image": "https://example.com/image4.jpg",
-        "tag": "finance",
+        "image": "../assets/images/img-post-fourth.png",
+        "tag": "",
         "title": "Pellestenque Eget Erat Nisi. Usce Blandit Nunc Lacus, Cursus Blandit",
         "date": "2024-05-23",
-        "excerpt": "Saving money can be challenging, especially when you're on a tight budget. Here are some strategies to help you save more effectively.",
-        "author": "Michael Brown"
+        "excerpt": "",
+        "author": ""
     }
 ]

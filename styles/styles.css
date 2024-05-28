@@ -10,9 +10,27 @@ body {
     margin: auto;
     box-sizing: border-box;
 }
-
+.header-container {
+margin-bottom: 40px;
+padding-left: 16px;
+}
+.header-container p {
+ font-size: 20px;
+ font-weight: 500;   
+}
+h2, p {
+  margin-bottom: 0px;  
+}
 .card {
     border: 0px;
+    border-radius: 0;
+}
+p.card-text {
+    color: #5F6E7C;
+    font-weight: 400;
+}
+.col {
+  padding: 0px;  
 }
 img.card-img {
     width: 247px;
@@ -21,3 +39,56 @@ img.card-img {
 .card-body {
     padding: 0;
 }
+.card-body h2.card-title {
+ margin-bottom: 16px;   
+}
+.row-other-posts  h2.card-title {
+    margin-bottom: 8px;   
+   }
+.card-body p {
+margin-bottom: 16px;    
+}
+.primary-row {
+    gap: 50px;
+}
+.row {
+ margin: 0;   
+}
+.row.row-other-posts {
+    gap: 20px;
+}
+
+.card.card-other-posts:not(:last-child) {
+    border-bottom: 1px solid #B5C0CC;
+}
+
+.card.card-other-posts {
+    padding-bottom: 16px;
+}
+
+.card.card-other-posts:not(:first-child) {
+    padding-top: 16px;
+}
+.author-container {
+    display: flex;
+    gap: 10px;
+}
+.author-container p {
+   margin-bottom: 0px; 
+}
+.author-container img {
+    width: 50px;
+}
+.col.img-col {max-width: 247px;}
+@media only screen and (min-width: 1440px) {
+    .row-other-posts .col:first-child {
+        padding-left: 20px;
+    }
+  .card-body {
+    padding: 20px 16px 16px 16px;
+  }
+  h2.card-title {
+    font-size: 1rem;
+  }
+
+  }
