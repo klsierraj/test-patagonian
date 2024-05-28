@@ -30,7 +30,6 @@
             fetch('../data/posts.json')
                 .then(response => response.json())
                 .then(posts => {
-                    // Función para crear el HTML del primer post
                     function createFirstPostHTML(post) {
                         return `
                             <div class="card">
@@ -67,11 +66,9 @@
                         `;
                     }
 
-                    // Cargar el primer post
                     const firstPostContainer = document.getElementById('first-post');
                     firstPostContainer.innerHTML = createFirstPostHTML(posts[0]);
 
-                    // Cargar los otros posts
                     const otherPostsContainer = document.getElementById('other-posts');
                     for (let i = 1; i < posts.length; i++) {
                         otherPostsContainer.innerHTML += createOtherPostHTML(posts[i]);
